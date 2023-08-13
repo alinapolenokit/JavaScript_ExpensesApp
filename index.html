@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Учёт расходов</h1>
+
+            <input 
+             class="js-input input"
+             type="number">
+
+             <select class=" js-category categorySelect">
+                <option hidden disabled selected value="Категория">Категория</option>
+                <option value="Транспорт">Транспорт</option>
+                <option value="Кафе">Кафе и рестораны</option>
+                <option value="Аптека">Аптека</option>
+                <option value="Развлечения">Развлечения</option>
+            </select>
+
+            <button class="js-button">Добавить</button>
+
+            <div class="stats">
+                <div class="stats_limit">
+                    <span class="label">Лимит:</span>
+                    <span class="js-limit"> руб.</span></p>  
+                </div>
+
+                <div class="stats_sum">
+                    <span class="label">Сумма:</span>
+                    <span class="js-sum"> руб.</span></p>  
+                </div>
+
+                <div class="stats_status">
+                    <span class="label">Статус:</span>
+                    <span class="js-status status_positive"></span></p>  
+                </div>
+            </div>
+                        
+           
+
+            
+       
+            <h2>История</h2> 
+            <div class="js-history"></div>
+          
+    
+            <button class="js-clearButton clearButton">Сбросить расходы</button>
+    
+    
+
+
+    <script src="index.js"></script>
+</body>
+</html>
